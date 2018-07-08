@@ -14,11 +14,26 @@ Time spent: **X** hours spent in total
 
 ## User Stories
 
-The following **required** functionality is completed:
+*Required*
+
+* Profile to indicate interests and scope for mentorship
+* Tags for interests, roles etc. 
+* Discovery mentors based on professional interests
+* ML algorithms
+* Connecting People
+* Appointments/Scheduling/Invites, etc.
+* Waitlist
+* (fake calendar)
 
 
+*Optional*
 
-The following **optional** features are implemented:
+* Profile Rating/Feedback (mentee ↔ mentor)
+* Gamification (rewards/achievements)
+* Personal Checklist/Notes/Milestones w/ different mentors
+* Books/Publications/Preferred Reading in profile section
+* FaceTime integration (best times and methods to meet up based on location and time and preference)
+
 
 
 
