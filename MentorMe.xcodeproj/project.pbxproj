@@ -18,6 +18,7 @@
 		C03D899C20F7CA9400342B39 /* AboutMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C03D899B20F7CA9400342B39 /* AboutMeViewController.m */; };
 		C03D899F20F7CA9900342B39 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C03D899E20F7CA9900342B39 /* LoginViewController.m */; };
 		C03D89A220F7CAA000342B39 /* AppointmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C03D89A120F7CAA000342B39 /* AppointmentViewController.m */; };
+		C03D89A520F7CE3D00342B39 /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C03D89A420F7CE3D00342B39 /* SignUpViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,8 @@
 		C03D899E20F7CA9900342B39 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		C03D89A020F7CAA000342B39 /* AppointmentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppointmentViewController.h; sourceTree = "<group>"; };
 		C03D89A120F7CAA000342B39 /* AppointmentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppointmentViewController.m; sourceTree = "<group>"; };
+		C03D89A320F7CE3D00342B39 /* SignUpViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SignUpViewController.h; sourceTree = "<group>"; };
+		C03D89A420F7CE3D00342B39 /* SignUpViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SignUpViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +155,8 @@
 				C03D899E20F7CA9900342B39 /* LoginViewController.m */,
 				C03D89A020F7CAA000342B39 /* AppointmentViewController.h */,
 				C03D89A120F7CAA000342B39 /* AppointmentViewController.m */,
+				C03D89A320F7CE3D00342B39 /* SignUpViewController.h */,
+				C03D89A420F7CE3D00342B39 /* SignUpViewController.m */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -298,6 +303,7 @@
 				C03D899C20F7CA9400342B39 /* AboutMeViewController.m in Sources */,
 				A88312FD20F28D5C00363E48 /* AppDelegate.m in Sources */,
 				C03D89A220F7CAA000342B39 /* AppointmentViewController.m in Sources */,
+				C03D89A520F7CE3D00342B39 /* SignUpViewController.m in Sources */,
 				C03D899F20F7CA9900342B39 /* LoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
