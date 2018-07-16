@@ -196,11 +196,11 @@
             </objects>
             <point key="canvasLocation" x="-314" y="-331"/>
         </scene>
-        <!--Discover NICO-->
+        <!--Discover-->
         <scene sceneID="1nT-wi-mda">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fR1-Xc-du6" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Discover NICO" id="mdr-OK-viV"/>
+                    <tabBarItem key="tabBarItem" title="Discover" id="mdr-OK-viV"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="vvg-sS-sMo">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
