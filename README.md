@@ -1,4 +1,16 @@
 
+
+**Pods to install**
+- DateTools
+- GPSKit
+
+**Instructions**
+1) Navigate to your project on Terminal
+2) Open Podfile
+3) Make sure **DateTools** and **GPSKit** are listed as pods to install
+4) Run pod install on Terminal
+
+
 # Final Project - *Mentor Me*
 
 **MentorMe** tackles this problem:
