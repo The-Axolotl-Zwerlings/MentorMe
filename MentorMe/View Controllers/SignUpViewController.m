@@ -42,7 +42,10 @@
     newUser.email = self.emailField.text;
     newUser.password = self.passwordField.text;
     
-
+    newUser.name = @"Jones";
+    newUser.jobTitle = @"idk";
+    newUser.school = @"a school";
+    
     // call sign up function on the object
     [newUser signUpInBackgroundWithBlock:^(BOOL succeeded, NSError * error) {
         if (error != nil) {
