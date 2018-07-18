@@ -19,10 +19,18 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wJf-jd-9sV">
-                                <rect key="frame" x="67" y="142" width="240" height="441"/>
+                                <rect key="frame" x="0.0" y="14" width="375" height="653"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.19246419270833334" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LoL-My-MoO">
+                                <rect key="frame" x="121" y="297" width="132" height="86"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.19246419270000001" green="0.0" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="z0l-7Z-vq7"/>
@@ -38,6 +46,7 @@
         <!--Discover-->
         <scene sceneID="zJf-V0-auA">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yRt-F0-q3H" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController storyboardIdentifier="DiscoverTableViewStoryboard" automaticallyAdjustsScrollViewInsets="NO" id="V4P-nm-RfD" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Discover" image="search" id="mOB-cP-8bb"/>
                     <toolbarItems/>
@@ -50,26 +59,8 @@
                         <segue destination="UGR-cv-PWW" kind="relationship" relationship="rootViewController" id="nUT-H8-tzr"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="yRt-F0-q3H" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1247.2" y="187.55622188905548"/>
-        </scene>
-        <!--Tab Bar Controller-->
-        <scene sceneID="pBI-PQ-JGz">
-            <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Dhz-tX-knd" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="A8R-E7-fzJ">
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </tabBar>
-                    <connections>
-                        <segue destination="V4P-nm-RfD" kind="relationship" relationship="viewControllers" id="0WO-N1-yKI"/>
-                    </connections>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="5ZA-g8-LnH" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="308" y="187.55622188905548"/>
         </scene>
     </scenes>
     <resources>

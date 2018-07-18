@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WBg-7v-Fqy">
-                                <rect key="frame" x="67" y="132" width="240" height="441"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.77902560763888884" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
@@ -28,48 +28,12 @@
                         <viewLayoutGuide key="safeArea" id="FTq-cI-aa6"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Appointments" image="heart" id="rBK-ey-Lfs"/>
-                    <navigationItem key="navigationItem" id="fx4-JQ-iR6"/>
+                    <navigationItem key="navigationItem" title="Appointments" id="fx4-JQ-iR6"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bOj-rm-IuB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2207.1999999999998" y="-109.29535232383809"/>
-        </scene>
-        <!--Appointments-->
-        <scene sceneID="8Fw-Ke-cH7">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="FEA-Zi-LYC" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Appointments" image="heart" id="DUD-Lo-3dj"/>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="FQJ-Gc-B7D">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="CKj-0e-lgA" kind="relationship" relationship="rootViewController" id="iZr-Yi-4Db"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="BRc-U4-OZ4" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1268" y="-109.29535232383809"/>
-        </scene>
-        <!--Tab Bar Controller-->
-        <scene sceneID="bWw-dh-mzx">
-            <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="wLX-ZC-1My" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="WqB-lL-cdJ">
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </tabBar>
-                    <connections>
-                        <segue destination="FEA-Zi-LYC" kind="relationship" relationship="viewControllers" id="Z6G-Dg-arE"/>
-                    </connections>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="C9J-0B-73r" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="328.80000000000001" y="-109.29535232383809"/>
         </scene>
     </scenes>
     <resources>

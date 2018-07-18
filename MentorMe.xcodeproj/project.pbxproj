@@ -184,9 +184,9 @@
 			isa = PBXGroup;
 			children = (
 				A883130120F28D5C00363E48 /* Main.storyboard */,
-				C0D040D820FE7000005D4FC2 /* Tab Bar Storyboards */,
-				C002266F20FE63BA007D359B /* SignUpViewController.storyboard */,
 				C002267120FE64FD007D359B /* LoginViewControllerStoryboard.storyboard */,
+				C002266F20FE63BA007D359B /* SignUpViewController.storyboard */,
+				C0D040D820FE7000005D4FC2 /* Tab Bar Storyboards */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -410,10 +410,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-MentorMe/Pods-MentorMe-resources.sh",
 				"${PODS_ROOT}/DateTools/DateTools/DateTools/DateTools.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/Parse/Parse.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/DateTools.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Parse.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

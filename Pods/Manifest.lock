@@ -1,20 +1,30 @@
 PODS:
+  - Bolts/Tasks (1.9.0)
   - DateTools (2.0.0)
   - GPSKit (0.9.3)
+  - Parse (1.17.1):
+    - Parse/Core (= 1.17.1)
+  - Parse/Core (1.17.1):
+    - Bolts/Tasks (~> 1.9)
 
 DEPENDENCIES:
   - DateTools
   - GPSKit
+  - Parse
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - Bolts
     - DateTools
     - GPSKit
+    - Parse
 
 SPEC CHECKSUMS:
+  Bolts: ac6567323eac61e203f6a9763667d0f711be34c8
   DateTools: 933ac9c490f21f92127cf690ccd8c397e0126caf
   GPSKit: 4c156e7919fa40e9025350a7af39b286afa2ca69
+  Parse: d3edaf8c7c722cb33cb83ba7821d015ae32d362d
 
-PODFILE CHECKSUM: 2356a6604e3705248aa9acc0fb9b9acce46bb801
+PODFILE CHECKSUM: d6c1b1fde48b7bb7644c82cf1b8dcc4d6c5a65b9
 
 COCOAPODS: 1.5.3

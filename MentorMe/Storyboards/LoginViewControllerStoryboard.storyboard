@@ -13,7 +13,7 @@
         <!--Login View Controller-->
         <scene sceneID="IFU-fd-AZZ">
             <objects>
-                <viewController id="e8i-D8-L1t" customClass="LoginViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" id="e8i-D8-L1t" customClass="LoginViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XUd-17-3LQ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -33,14 +33,20 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m9l-h7-X6H">
-                                <rect key="frame" x="29" y="339" width="46" height="30"/>
+                                <rect key="frame" x="27" y="339" width="50" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="SignUp"/>
+                                <connections>
+                                    <segue destination="w9f-Aa-b4d" kind="show" id="1q9-hH-8rd"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DH4-ZX-wbK">
-                                <rect key="frame" x="301" y="339" width="46" height="30"/>
+                                <rect key="frame" x="305" y="339" width="38" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Login"/>
+                                <connections>
+                                    <segue destination="i8M-xg-jYI" kind="show" id="NvJ-RG-qBR"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="V8i-WI-Ffc">
                                 <rect key="frame" x="34" y="275" width="313" height="30"/>
@@ -72,19 +78,19 @@
             </objects>
             <point key="canvasLocation" x="133.59999999999999" y="154.27286356821591"/>
         </scene>
-        <!--Storyboard Reference-->
+        <!--SignUpViewController-->
         <scene sceneID="6JB-lG-cPD">
             <objects>
-                <viewControllerPlaceholder id="w9f-Aa-b4d" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="SignUpViewController" referencedIdentifier="SignUpViewController" id="w9f-Aa-b4d" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nd3-oo-bt5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="696" y="-32"/>
         </scene>
-        <!--Storyboard Reference-->
+        <!--TabBarViewController-->
         <scene sceneID="vim-47-WMv">
             <objects>
-                <viewControllerPlaceholder id="i8M-xg-jYI" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sCc-Sc-Lkb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="TabBarViewController" id="i8M-xg-jYI" sceneMemberID="viewController"/>
             </objects>
             <point key="canvasLocation" x="694" y="98"/>
         </scene>

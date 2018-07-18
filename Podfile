@@ -8,7 +8,7 @@ target 'MentorMe' do
   # Pods for MentorMe
   pod 'DateTools'
   pod 'GPSKit'
-
+  pod 'Parse'
 
   target 'MentorMeTests' do
     inherit! :search_paths
