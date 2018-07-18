@@ -39,7 +39,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.discoverTableView.delegate = self;
+    self.discoverTableView.dataSource = self;
     // Do any additional setup after loading the view.
+    
+    [self fetchFilteredUsers];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -54,8 +59,7 @@
     return cell;
 }
 -(void)fetchFilteredUsers{
-    PFQuery *usersQuery = [PFUser query];
-    usersQuery.limit = 20;
+    PFQuery *usersQuery = [PFQuery queryWithClassName:@"User"];
     [usersQuery findObjectsInBackgroundWithBlock:^(NSArray * _Nullable users, NSError * _Nullable error) {
         if(users){
             self.filteredUsers = users;
