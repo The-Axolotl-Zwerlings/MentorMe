@@ -64,7 +64,7 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ccj-O1-eS4">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ccj-O1-eS4" customClass="PFImageView">
                                                     <rect key="frame" x="8" y="8" width="115" height="105"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
@@ -81,6 +81,7 @@
                                             <outlet property="interestsLabel" destination="vJm-Dq-Kvt" id="hIc-hE-vh8"/>
                                             <outlet property="jobLabel" destination="D15-jg-cBc" id="U2g-wg-NsI"/>
                                             <outlet property="nameLabel" destination="dx8-Px-Rv3" id="rgL-oE-yxB"/>
+                                            <outlet property="profilePicView" destination="Ccj-O1-eS4" id="TcJ-sP-pfr"/>
                                             <outlet property="schoolLabel" destination="PUk-H0-1uB" id="1fu-Dt-8AE"/>
                                         </connections>
                                     </tableViewCell>

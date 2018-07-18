@@ -7,11 +7,12 @@
 //
 
 #import "DiscoverTableViewController.h"
-
+#import "DiscoverCell.h"
+#import "Parse.h"
 @interface DiscoverTableViewController () <UITableViewDelegate,UITableViewDataSource>
 @property (strong, nonatomic) IBOutlet UISegmentedControl *mentorMenteeSegControl;
 @property (strong, nonatomic) IBOutlet UIButton *filterButton;
-
+@property (strong, nonatomic) NSArray *filteredUsers;
 @end
 
 @implementation DiscoverTableViewController
@@ -25,12 +26,28 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
--(void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath{
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    DiscoverCell *cell = [tableView dequeueReusableCellWithIdentifier:@"DiscoverCell" forIndexPath:indexPath];
+    [cell layoutCell:self.filteredUsers[indexPath.row]];
     
     
-    
-    
+    return cell;
 }
+-(void)fetchFilteredUsers{
+    PFQuery *usersQuery = [PFUser query];
+    usersQuery.limit = 20;
+    [usersQuery findObjectsInBackgroundWithBlock:^(NSArray * _Nullable users, NSError * _Nullable error) {
+        if(users){
+            self.filteredUsers = users;
+            NSLog(@"WE GOT THE USERS 😇");
+        } else{
+            NSLog(@"didn't get the users 🙃");
+        }
+        [self.discoverTableView reloadData];
+    }];
+
+}
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return 3;
 }
