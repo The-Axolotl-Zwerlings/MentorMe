@@ -53,7 +53,7 @@
     
     PFQuery *query = [PFQuery queryWithClassName:@"AppointmentModel"];
     
-  //  [query includeKeys:@[@"_p_mentee", @"created_at"]];
+    [query includeKeys:@[@"username"]];
     
     [query findObjectsInBackgroundWithBlock:^(NSArray *posts, NSError *error) {
     
