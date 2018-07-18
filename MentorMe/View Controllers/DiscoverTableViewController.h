@@ -8,7 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol DiscoverTableViewControllerDelegate;
+
 @interface DiscoverTableViewController : UIViewController <UITableViewDelegate,UITableViewDataSource>
 @property (strong, nonatomic) IBOutlet UITableView *discoverTableView;
+@property (weak, nonatomic) id <DiscoverTableViewControllerDelegate> delegate;
 
 @end

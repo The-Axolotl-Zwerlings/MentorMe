@@ -179,8 +179,6 @@
 				A883130A20F28D5F00363E48 /* main.m */,
 				A82A494720FFA3FE00DC129F /* PFUser+ExtendedUser.h */,
 				A82A494820FFA3FE00DC129F /* PFUser+ExtendedUser.m */,
-				A82A495820FFAF8200DC129F /* DiscoverCell.h */,
-				A82A495920FFAF8200DC129F /* DiscoverCell.m */,
 			);
 			path = MentorMe;
 			sourceTree = "<group>";
@@ -246,6 +244,8 @@
 			children = (
 				C05743DC20FFBB1E00A6F529 /* AppointmentCell.h */,
 				C05743DD20FFBB1E00A6F529 /* AppointmentCell.m */,
+				A82A495820FFAF8200DC129F /* DiscoverCell.h */,
+				A82A495920FFAF8200DC129F /* DiscoverCell.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
