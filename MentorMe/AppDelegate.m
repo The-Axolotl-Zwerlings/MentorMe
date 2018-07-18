@@ -27,18 +27,7 @@
     
     [Parse initializeWithConfiguration:config];
     
-    PFObject *user = [PFObject objectWithClassName:@"User"];
-     user[@"user"] = @1337;
-     user[@"password"] = @"Sean Plott";
-     user[@"email"] = @NO;
-     [user saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
-     if (succeeded) {
-     NSLog(@"Object saved!");
-     } else {
-     NSLog(@"Error: %@", error.description);
-     }
-     }];
-    
+
     if (PFUser.currentUser) {
         UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"TabBarViewControllerStoryboard" bundle:nil];
         
