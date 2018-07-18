@@ -13,7 +13,7 @@
 		A82A494C20FFA5B800DC129F /* AppointmentModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A82A494B20FFA5B800DC129F /* AppointmentModel.m */; };
 		A82A494F20FFA5C800DC129F /* InterestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A82A494E20FFA5C800DC129F /* InterestModel.m */; };
 		A88312FD20F28D5C00363E48 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A88312FC20F28D5C00363E48 /* AppDelegate.m */; };
-		A883130320F28D5C00363E48 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A883130120F28D5C00363E48 /* Main.storyboard */; };
+		A883130320F28D5C00363E48 /* TabBarViewControllerStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A883130120F28D5C00363E48 /* TabBarViewControllerStoryboard.storyboard */; };
 		A883130520F28D5F00363E48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A883130420F28D5F00363E48 /* Assets.xcassets */; };
 		A883130820F28D5F00363E48 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A883130620F28D5F00363E48 /* LaunchScreen.storyboard */; };
 		A883130B20F28D5F00363E48 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A883130A20F28D5F00363E48 /* main.m */; };
@@ -24,7 +24,7 @@
 		C002266B20FE5A2C007D359B /* ProfileViewControllerStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C002266A20FE5A2C007D359B /* ProfileViewControllerStoryboard.storyboard */; };
 		C002266E20FE5B70007D359B /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C002266D20FE5B70007D359B /* ProfileViewController.m */; };
 		C002267020FE63BA007D359B /* SignUpViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C002266F20FE63BA007D359B /* SignUpViewController.storyboard */; };
-		C002267220FE64FD007D359B /* LoginViewControllerStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C002267120FE64FD007D359B /* LoginViewControllerStoryboard.storyboard */; };
+		C002267220FE64FD007D359B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C002267120FE64FD007D359B /* Main.storyboard */; };
 		C03D899920F7CA8D00342B39 /* DiscoverTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C03D899820F7CA8D00342B39 /* DiscoverTableViewController.m */; };
 		C03D899F20F7CA9900342B39 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C03D899E20F7CA9900342B39 /* LoginViewController.m */; };
 		C03D89A520F7CE3D00342B39 /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C03D89A420F7CE3D00342B39 /* SignUpViewController.m */; };
@@ -66,7 +66,7 @@
 		A88312F820F28D5C00363E48 /* MentorMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MentorMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A88312FB20F28D5C00363E48 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A88312FC20F28D5C00363E48 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		A883130220F28D5C00363E48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A883130220F28D5C00363E48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/TabBarViewControllerStoryboard.storyboard; sourceTree = "<group>"; };
 		A883130420F28D5F00363E48 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A883130720F28D5F00363E48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A883130920F28D5F00363E48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -84,7 +84,7 @@
 		C002266C20FE5B70007D359B /* ProfileViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
 		C002266D20FE5B70007D359B /* ProfileViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
 		C002266F20FE63BA007D359B /* SignUpViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUpViewController.storyboard; sourceTree = "<group>"; };
-		C002267120FE64FD007D359B /* LoginViewControllerStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginViewControllerStoryboard.storyboard; sourceTree = "<group>"; };
+		C002267120FE64FD007D359B /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		C03D899720F7CA8D00342B39 /* DiscoverTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DiscoverTableViewController.h; sourceTree = "<group>"; };
 		C03D899820F7CA8D00342B39 /* DiscoverTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiscoverTableViewController.m; sourceTree = "<group>"; };
 		C03D899D20F7CA9900342B39 /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
@@ -207,8 +207,8 @@
 		C002266520FE578B007D359B /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
-				A883130120F28D5C00363E48 /* Main.storyboard */,
-				C002267120FE64FD007D359B /* LoginViewControllerStoryboard.storyboard */,
+				A883130120F28D5C00363E48 /* TabBarViewControllerStoryboard.storyboard */,
+				C002267120FE64FD007D359B /* Main.storyboard */,
 				C002266F20FE63BA007D359B /* SignUpViewController.storyboard */,
 				C0D040D820FE7000005D4FC2 /* Tab Bar Storyboards */,
 			);
@@ -362,14 +362,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C002267220FE64FD007D359B /* LoginViewControllerStoryboard.storyboard in Resources */,
+				C002267220FE64FD007D359B /* Main.storyboard in Resources */,
 				C002266720FE57D1007D359B /* DiscoverTableViewStoryboard.storyboard in Resources */,
 				A883130820F28D5F00363E48 /* LaunchScreen.storyboard in Resources */,
 				A883130520F28D5F00363E48 /* Assets.xcassets in Resources */,
 				C002266920FE5A11007D359B /* AppointmentsViewController.storyboard in Resources */,
 				C002267020FE63BA007D359B /* SignUpViewController.storyboard in Resources */,
 				C002266B20FE5A2C007D359B /* ProfileViewControllerStoryboard.storyboard in Resources */,
-				A883130320F28D5C00363E48 /* Main.storyboard in Resources */,
+				A883130320F28D5C00363E48 /* TabBarViewControllerStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -516,12 +516,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		A883130120F28D5C00363E48 /* Main.storyboard */ = {
+		A883130120F28D5C00363E48 /* TabBarViewControllerStoryboard.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				A883130220F28D5C00363E48 /* Base */,
 			);
-			name = Main.storyboard;
+			name = TabBarViewControllerStoryboard.storyboard;
 			sourceTree = "<group>";
 		};
 		A883130620F28D5F00363E48 /* LaunchScreen.storyboard */ = {

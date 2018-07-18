@@ -9,6 +9,10 @@
 #import "LoginViewController.h"
 
 @interface LoginViewController ()
+@property (weak, nonatomic) IBOutlet UITextField *usernameField;
+@property (weak, nonatomic) IBOutlet UITextField *passwordField;
+@property (weak, nonatomic) IBOutlet UIButton *LogInButton;
+@property (weak, nonatomic) IBOutlet UIButton *RegisterButton;
 
 @end
 
@@ -22,6 +26,27 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+
+- (void)loginUser  {
+    NSString *username = self.usernameField.text;
+    NSString *password = self.passwordField.text;
+    
+    [PFUser logInWithUsernameInBackground:username password:password block:^(PFUser * user, NSError *  error) {
+        if (error != nil) {
+            NSLog(@"User log in failed: %@", error.localizedDescription);
+        } else {
+            NSLog(@"User logged in successfully");
+            
+            // display view controller that needs to shown after successful login
+        }
+    }];
+}
+
+- (IBAction)onTapLogin:(id)sender {
+    
+    [self loginUser];
 }
 
 /*
