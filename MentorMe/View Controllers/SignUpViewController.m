@@ -11,7 +11,7 @@
 #import "PFUser+ExtendedUser.h"
 #import "DiscoverTableViewController.h"
 
-@interface SignUpViewController ()
+@interface SignUpViewController () <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *emailField;
 @property (weak, nonatomic) IBOutlet UITextField *usernameField;
 @property (weak, nonatomic) IBOutlet UITextField *passwordField;
@@ -72,11 +72,31 @@
     }];
 }
 
+-(void)addProfilePicture {
+    UIImagePickerController* imagePickerVC = [UIImagePickerController new];
+    imagePickerVC.delegate = self;
+    imagePickerVC.allowsEditing = YES;
+    if([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]){
+        imagePickerVC.sourceType = UIImagePickerControllerSourceTypeCamera;
+    }
+    else{
+        imagePickerVC.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+    }
+    
+    [self presentViewController:imagePickerVC animated:YES completion:nil];
+}
+
 - (IBAction)onTapRegister:(id)sender {
     
     [self registerUser];
     
 }
+
+- (IBAction)onTapAddProfilePicture:(id)sender {
+    [self addProfilePicture];
+}
+
+
 
 
 #pragma mark - Navigation
