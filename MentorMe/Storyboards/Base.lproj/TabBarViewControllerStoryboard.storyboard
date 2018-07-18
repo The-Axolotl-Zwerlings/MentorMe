@@ -18,7 +18,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X1a-7I-T5T" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1416" y="698"/>
+            <point key="canvasLocation" x="1409" y="697"/>
         </scene>
         <!--AppointmentsViewController-->
         <scene sceneID="pjG-nQ-w9R">
@@ -54,7 +54,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7yB-5z-1Ac" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-471" y="800"/>
+            <point key="canvasLocation" x="-418" y="823"/>
         </scene>
         <!--Main-->
         <scene sceneID="nLz-PV-iuX">
