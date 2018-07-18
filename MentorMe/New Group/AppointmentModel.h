@@ -7,7 +7,17 @@
 //
 
 #import "PFObject.h"
+#import "PFUser+ExtendedUser.h"
+#import "Parse/Parse.h"
+#import "ParseUI.h"
 
 @interface AppointmentModel : PFObject <PFSubclassing>
+
+@property (nonatomic, strong ) PFUser *mentor;
+@property( nonatomic, strong ) NSDate *meetingDate;
+@property( nonatomic, strong ) NSString *meetingType;
+@property( nonatomic, strong ) NSString *meetingLocation;
+
+
 
 @end
