@@ -13,9 +13,80 @@
 @property (strong, nonatomic) IBOutlet UISegmentedControl *mentorMenteeSegControl;
 @property (strong, nonatomic) IBOutlet UIButton *filterButton;
 @property (strong, nonatomic) NSArray *filteredUsers;
+@property (strong, nonatomic) UIRefreshControl *refreshControl;
 @end
 
 @implementation DiscoverTableViewController
+
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    
+    self.discoverTableView.delegate = self;
+    self.discoverTableView.dataSource = self;
+    // Do any additional setup after loading the view.
+    
+    [self fetchFilteredUsers];
+    
+    
+    self.refreshControl = [[UIRefreshControl alloc] init];
+    [self.refreshControl addTarget:self action:@selector(fetchFilteredUsers) forControlEvents:UIControlEventValueChanged];
+    
+    [self.discoverTableView insertSubview:self.refreshControl atIndex:0];
+    
+    [self.discoverTableView reloadData];
+
+}
+
+- (void) viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    
+    [self.discoverTableView reloadData];
+    
+}
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+-(void)fetchFilteredUsers{
+    PFQuery *usersQuery = [PFUser query];
+    //usersQuery.limit = 20;
+    //[usersQuery orderByDescending:@"createdAt"];
+    
+    [usersQuery findObjectsInBackgroundWithBlock:^(NSArray *users, NSError * error) {
+        
+        PFUser *firstUser = [users firstObject];
+        
+        NSLog( @"%@", firstUser.username);
+        
+        if(users){
+        
+            self.filteredUsers = users;
+            [self.discoverTableView reloadData];
+            [self.refreshControl endRefreshing];
+            NSLog(@"WE GOT THE USERS 😇");
+        } else{
+            NSLog(@"didn't get the users 🙃");
+        }
+        
+    }];
+
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return self.filteredUsers.count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    DiscoverCell *cell = [tableView dequeueReusableCellWithIdentifier:@"DiscoverCell" forIndexPath:indexPath];
+    [cell layoutCell:self.filteredUsers[indexPath.row]];
+    
+    
+    return cell;
+}
+
 - (IBAction)logoutButtonAction:(UIButton *)sender {
     [PFUser logOutInBackgroundWithBlock:^(NSError * _Nullable error) {
         if(error == nil){
@@ -26,6 +97,7 @@
         }
     }];
 }
+
 - (IBAction)logoutAction:(UIBarButtonItem *)sender {
     [PFUser logOutInBackgroundWithBlock:^(NSError * _Nullable error) {
         if(error == nil){
@@ -35,41 +107,6 @@
             NSLog(@"error in logging out");
         }
     }];
-}
-
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    DiscoverCell *cell = [tableView dequeueReusableCellWithIdentifier:@"DiscoverCell" forIndexPath:indexPath];
-    [cell layoutCell:self.filteredUsers[indexPath.row]];
-    
-    
-    return cell;
-}
--(void)fetchFilteredUsers{
-    PFQuery *usersQuery = [PFUser query];
-    usersQuery.limit = 20;
-    [usersQuery findObjectsInBackgroundWithBlock:^(NSArray * _Nullable users, NSError * _Nullable error) {
-        if(users){
-            self.filteredUsers = users;
-            NSLog(@"WE GOT THE USERS 😇");
-        } else{
-            NSLog(@"didn't get the users 🙃");
-        }
-        [self.discoverTableView reloadData];
-    }];
-
-}
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 3;
 }
 /*
 #pragma mark - Navigation

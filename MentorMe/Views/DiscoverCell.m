@@ -20,6 +20,7 @@
 
     // Configure the view for the selected state
 }
+
 - (void)layoutCell:(PFUser *)user{
     self.nameLabel.text = user.name;
     self.schoolLabel.text = user.school;
