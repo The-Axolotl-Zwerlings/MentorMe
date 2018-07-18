@@ -28,8 +28,9 @@
 }
 
 - (void) setAppointment:(AppointmentModel *)appointment {
-    
-    PFUser *myUser = [PFUser currentUser];
+   
+    _appointment = appointment;
+   
     PFUser *mentor = self.appointment.mentor;
     self.mentorName.text = mentor.username;
     self.mentorProfilePic.file = mentor.profilePic;

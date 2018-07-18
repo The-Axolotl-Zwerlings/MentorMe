@@ -8,6 +8,9 @@
 
 #import "AppDelegate.h"
 #import "Parse/Parse.h"
+#import "AppointmentCell.h"
+#import "AppointmentModel.h"
+#import "AppointmentsViewController.h"
 
 @interface AppDelegate ()
 

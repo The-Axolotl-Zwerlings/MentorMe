@@ -142,6 +142,8 @@
 				A82A494B20FFA5B800DC129F /* AppointmentModel.m */,
 				A82A494D20FFA5C800DC129F /* InterestModel.h */,
 				A82A494E20FFA5C800DC129F /* InterestModel.m */,
+				A82A494720FFA3FE00DC129F /* PFUser+ExtendedUser.h */,
+				A82A494820FFA3FE00DC129F /* PFUser+ExtendedUser.m */,
 			);
 			name = Models;
 			path = "New Group";
@@ -182,8 +184,6 @@
 				A883130620F28D5F00363E48 /* LaunchScreen.storyboard */,
 				A883130920F28D5F00363E48 /* Info.plist */,
 				A883130A20F28D5F00363E48 /* main.m */,
-				A82A494720FFA3FE00DC129F /* PFUser+ExtendedUser.h */,
-				A82A494820FFA3FE00DC129F /* PFUser+ExtendedUser.m */,
 			);
 			path = MentorMe;
 			sourceTree = "<group>";
