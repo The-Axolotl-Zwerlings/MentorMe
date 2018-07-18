@@ -52,7 +52,7 @@
 
 -(void)fetchFilteredUsersGet{
     PFQuery *usersQuery = [PFUser query];
-    usersQuery.limit = 3;
+    usersQuery.limit = 20;
     //[usersQuery orderByDescending:@"createdAt"];
     
     [usersQuery findObjectsInBackgroundWithBlock:^(NSArray *users, NSError * error) {
