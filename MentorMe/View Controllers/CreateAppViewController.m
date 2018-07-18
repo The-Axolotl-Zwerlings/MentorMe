@@ -26,7 +26,7 @@
 @property (strong, nonatomic) IBOutlet UILabel *typeMeetingLabel;
 @property (strong, nonatomic) IBOutlet UILabel *timeLabel;
 @property (strong, nonatomic) IBOutlet UILabel *locationLabel;
-
+@property (strong, nonatomic) PFUser *mentor;
 @end
 
 @implementation CreateAppViewController
@@ -35,6 +35,11 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    [AppointmentModel postAppointment:self.mentor withMeetingLocation:@"Bob's Burgers" withMeetingType:@"coffee" withMeetingDate:[NSDate date] withCompletion:^(BOOL succeeded, NSError * _Nullable error, AppointmentModel * _Nullable newAppointment) {
+        if(succeeded){
+            self.appointment = newAppointment;
+        }
+    }];
     
     
     [self setUILayout];
