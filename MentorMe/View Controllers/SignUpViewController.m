@@ -15,6 +15,15 @@
 @property (weak, nonatomic) IBOutlet UITextField *emailField;
 @property (weak, nonatomic) IBOutlet UITextField *usernameField;
 @property (weak, nonatomic) IBOutlet UITextField *passwordField;
+@property (weak, nonatomic) IBOutlet UITextField *bioField;
+@property (weak, nonatomic) IBOutlet UITextField *JobTitleField;
+@property (weak, nonatomic) IBOutlet UITextField *companyField;
+@property (weak, nonatomic) IBOutlet UITextField *institutionField;
+@property (weak, nonatomic) IBOutlet UITextField *majorField;
+
+
+
+@property (weak, nonatomic) IBOutlet UIButton *addProfilePictureButton;
 
 @property (weak, nonatomic) IBOutlet UIButton *registerButton;
 
@@ -41,6 +50,11 @@
     newUser.username = self.usernameField.text;
     newUser.email = self.emailField.text;
     newUser.password = self.passwordField.text;
+    newUser.bio = self.bioField.text;
+    newUser.jobTitle = self.JobTitleField.text;
+    newUser.company = self.companyField.text;
+    newUser.school = self.institutionField.text;
+    newUser.major = self.majorField.text;
     
     newUser.name = @"Jones";
     newUser.jobTitle = @"idk";
