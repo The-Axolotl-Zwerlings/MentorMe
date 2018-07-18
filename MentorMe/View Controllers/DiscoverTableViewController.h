@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface DiscoverTableViewController : UIViewController
+@property (strong, nonatomic) IBOutlet UITableView *discoverTableView;
 
 @end

@@ -8,7 +8,9 @@
 
 #import "DiscoverTableViewController.h"
 
-@interface DiscoverTableViewController ()
+@interface DiscoverTableViewController () <UITableViewDelegate,UITableViewDataSource>
+@property (strong, nonatomic) IBOutlet UISegmentedControl *mentorMenteeSegControl;
+@property (strong, nonatomic) IBOutlet UIButton *filterButton;
 
 @end
 
@@ -23,7 +25,15 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
+-(void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    
+    
+    
+}
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return 3;
+}
 /*
 #pragma mark - Navigation
 

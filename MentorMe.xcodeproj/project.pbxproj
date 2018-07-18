@@ -12,6 +12,7 @@
 		A82A494920FFA3FE00DC129F /* PFUser+ExtendedUser.m in Sources */ = {isa = PBXBuildFile; fileRef = A82A494820FFA3FE00DC129F /* PFUser+ExtendedUser.m */; };
 		A82A494C20FFA5B800DC129F /* AppointmentModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A82A494B20FFA5B800DC129F /* AppointmentModel.m */; };
 		A82A494F20FFA5C800DC129F /* InterestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A82A494E20FFA5C800DC129F /* InterestModel.m */; };
+		A82A495A20FFAF8200DC129F /* DiscoverCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A82A495920FFAF8200DC129F /* DiscoverCell.m */; };
 		A88312FD20F28D5C00363E48 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A88312FC20F28D5C00363E48 /* AppDelegate.m */; };
 		A883130320F28D5C00363E48 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A883130120F28D5C00363E48 /* Main.storyboard */; };
 		A883130520F28D5F00363E48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A883130420F28D5F00363E48 /* Assets.xcassets */; };
@@ -63,6 +64,8 @@
 		A82A494B20FFA5B800DC129F /* AppointmentModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppointmentModel.m; sourceTree = "<group>"; };
 		A82A494D20FFA5C800DC129F /* InterestModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterestModel.h; sourceTree = "<group>"; };
 		A82A494E20FFA5C800DC129F /* InterestModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterestModel.m; sourceTree = "<group>"; };
+		A82A495820FFAF8200DC129F /* DiscoverCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DiscoverCell.h; sourceTree = "<group>"; };
+		A82A495920FFAF8200DC129F /* DiscoverCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiscoverCell.m; sourceTree = "<group>"; };
 		A88312F820F28D5C00363E48 /* MentorMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MentorMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A88312FB20F28D5C00363E48 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A88312FC20F28D5C00363E48 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -172,6 +175,8 @@
 				A883130A20F28D5F00363E48 /* main.m */,
 				A82A494720FFA3FE00DC129F /* PFUser+ExtendedUser.h */,
 				A82A494820FFA3FE00DC129F /* PFUser+ExtendedUser.m */,
+				A82A495820FFAF8200DC129F /* DiscoverCell.h */,
+				A82A495920FFAF8200DC129F /* DiscoverCell.m */,
 			);
 			path = MentorMe;
 			sourceTree = "<group>";
@@ -435,11 +440,17 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-MentorMe/Pods-MentorMe-resources.sh",
 				"${PODS_ROOT}/DateTools/DateTools/DateTools/DateTools.bundle",
 				"${PODS_CONFIGURATION_BUILD_DIR}/Parse/Parse.bundle",
+				"${PODS_ROOT}/ParseUI/ParseUI/Resources/Localization/en.lproj",
+				"${PODS_ROOT}/ParseUI/ParseUI/Resources/Localization/fr.lproj",
+				"${PODS_ROOT}/ParseUI/ParseUI/Resources/Localization/pt-BR.lproj",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/DateTools.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Parse.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/en.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/fr.lproj",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/pt-BR.lproj",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -474,6 +485,7 @@
 				C03D899920F7CA8D00342B39 /* DiscoverTableViewController.m in Sources */,
 				A883130B20F28D5F00363E48 /* main.m in Sources */,
 				C0D040D720FE6F76005D4FC2 /* AppointmentsViewController.m in Sources */,
+				A82A495A20FFAF8200DC129F /* DiscoverCell.m in Sources */,
 				A82A494F20FFA5C800DC129F /* InterestModel.m in Sources */,
 				A82A494C20FFA5B800DC129F /* AppointmentModel.m in Sources */,
 				A88312FD20F28D5C00363E48 /* AppDelegate.m in Sources */,
