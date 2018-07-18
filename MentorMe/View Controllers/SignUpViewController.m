@@ -27,6 +27,7 @@
 
 @property (weak, nonatomic) IBOutlet UIButton *registerButton;
 
+@property (nonatomic, strong) UIImage* chosenProfilePicture;
 
 @end
 
@@ -55,10 +56,7 @@
     newUser.company = self.companyField.text;
     newUser.school = self.institutionField.text;
     newUser.major = self.majorField.text;
-    
-    newUser.name = @"Jones";
-    newUser.jobTitle = @"idk";
-    newUser.school = @"a school";
+    [self resizeThisImage:self.chosenProfilePicture withSize:self.chosenProfilePicture.size];
     
     // call sign up function on the object
     [newUser signUpInBackgroundWithBlock:^(BOOL succeeded, NSError * error) {
@@ -84,6 +82,25 @@
     }
     
     [self presentViewController:imagePickerVC animated:YES completion:nil];
+}
+-(void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *,id> *)info{
+    
+    self.chosenProfilePicture = info[UIImagePickerControllerOriginalImage];
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (UIImage * _Nullable)resizeThisImage:(UIImage * _Nullable)image withSize:(CGSize)size {
+    UIImageView *resizeImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 100 , 100)];
+    
+    resizeImageView.contentMode = UIViewContentModeScaleAspectFill;
+    resizeImageView.image = image;
+    
+    UIGraphicsBeginImageContext(size);
+    [resizeImageView.layer renderInContext:UIGraphicsGetCurrentContext()];
+    UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    return newImage;
 }
 
 - (IBAction)onTapRegister:(id)sender {
