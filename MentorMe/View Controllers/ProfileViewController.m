@@ -16,6 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.user = [PFUser currentUser];
     [self setUIfeatures];
     // Do any additional setup after loading the view.
 }
@@ -27,6 +28,11 @@
 
 -(void)setUIfeatures {
     self.usernameLabel.text = self.user[@"username"];
+    self.jobTitleLabel.text = self.user[@"jobTitle"];
+    self.bioLabel.text = self.user[@"bio"];
+    self.profileImageView.file = nil;
+    self.profileImageView.file = self.user[@"profilePic"];
+    [self.profileImageView loadInBackground];
     
 }
 
