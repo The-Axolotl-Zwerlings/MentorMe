@@ -13,6 +13,8 @@
 		A82A494C20FFA5B800DC129F /* AppointmentModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A82A494B20FFA5B800DC129F /* AppointmentModel.m */; };
 		A82A494F20FFA5C800DC129F /* InterestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A82A494E20FFA5C800DC129F /* InterestModel.m */; };
 		A82A495A20FFAF8200DC129F /* DiscoverCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A82A495920FFAF8200DC129F /* DiscoverCell.m */; };
+		A82A495C20FFF70100DC129F /* CreateApp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A82A495B20FFF70100DC129F /* CreateApp.storyboard */; };
+		A82A495F20FFF73400DC129F /* CreateAppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A82A495E20FFF73400DC129F /* CreateAppViewController.m */; };
 		A88312FD20F28D5C00363E48 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A88312FC20F28D5C00363E48 /* AppDelegate.m */; };
 		A883130320F28D5C00363E48 /* TabBarViewControllerStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A883130120F28D5C00363E48 /* TabBarViewControllerStoryboard.storyboard */; };
 		A883130520F28D5F00363E48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A883130420F28D5F00363E48 /* Assets.xcassets */; };
@@ -67,6 +69,9 @@
 		A82A494E20FFA5C800DC129F /* InterestModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterestModel.m; sourceTree = "<group>"; };
 		A82A495820FFAF8200DC129F /* DiscoverCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DiscoverCell.h; sourceTree = "<group>"; };
 		A82A495920FFAF8200DC129F /* DiscoverCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiscoverCell.m; sourceTree = "<group>"; };
+		A82A495B20FFF70100DC129F /* CreateApp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CreateApp.storyboard; sourceTree = "<group>"; };
+		A82A495D20FFF73400DC129F /* CreateAppViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CreateAppViewController.h; sourceTree = "<group>"; };
+		A82A495E20FFF73400DC129F /* CreateAppViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CreateAppViewController.m; sourceTree = "<group>"; };
 		A88312F820F28D5C00363E48 /* MentorMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MentorMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A88312FB20F28D5C00363E48 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A88312FC20F28D5C00363E48 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -235,6 +240,8 @@
 				C002266D20FE5B70007D359B /* ProfileViewController.m */,
 				C05743DF20FFC22F00A6F529 /* AppointmentsViewController.h */,
 				C05743E020FFC22F00A6F529 /* AppointmentsViewController.m */,
+				A82A495D20FFF73400DC129F /* CreateAppViewController.h */,
+				A82A495E20FFF73400DC129F /* CreateAppViewController.m */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -256,6 +263,7 @@
 				C002266620FE57D1007D359B /* DiscoverTableViewStoryboard.storyboard */,
 				C002266820FE5A11007D359B /* AppointmentsViewController.storyboard */,
 				C002266A20FE5A2C007D359B /* ProfileViewControllerStoryboard.storyboard */,
+				A82A495B20FFF70100DC129F /* CreateApp.storyboard */,
 			);
 			path = "Tab Bar Storyboards";
 			sourceTree = "<group>";
@@ -380,6 +388,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A82A495C20FFF70100DC129F /* CreateApp.storyboard in Resources */,
 				C002267220FE64FD007D359B /* Main.storyboard in Resources */,
 				C002266720FE57D1007D359B /* DiscoverTableViewStoryboard.storyboard in Resources */,
 				A883130820F28D5F00363E48 /* LaunchScreen.storyboard in Resources */,
@@ -503,6 +512,7 @@
 				A82A494F20FFA5C800DC129F /* InterestModel.m in Sources */,
 				A82A494C20FFA5B800DC129F /* AppointmentModel.m in Sources */,
 				A88312FD20F28D5C00363E48 /* AppDelegate.m in Sources */,
+				A82A495F20FFF73400DC129F /* CreateAppViewController.m in Sources */,
 				A82A494920FFA3FE00DC129F /* PFUser+ExtendedUser.m in Sources */,
 				C002266E20FE5B70007D359B /* ProfileViewController.m in Sources */,
 				C03D89A520F7CE3D00342B39 /* SignUpViewController.m in Sources */,
