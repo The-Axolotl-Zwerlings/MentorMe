@@ -30,7 +30,7 @@
 
     if (PFUser.currentUser) {
         UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"TabBarViewControllerStoryboard" bundle:nil];
-        
+        NSLog(@"already logged on");
         self.window.rootViewController = [storyboard instantiateViewControllerWithIdentifier:@"TabBarNavigationController"];
     }
     

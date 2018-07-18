@@ -88,18 +88,32 @@
                                 </prototypes>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x7s-m9-tSJ">
-                                <rect key="frame" x="282" y="72" width="81" height="30"/>
+                                <rect key="frame" x="331" y="73" width="44" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Filters">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nmf-HO-7dG">
+                                <rect key="frame" x="260" y="73" width="57" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="LogOUT"/>
+                                <connections>
+                                    <action selector="logoutButtonAction:" destination="UGR-cv-PWW" eventType="touchUpInside" id="Cpx-g8-ozL"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="z0l-7Z-vq7"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Discover" image="search" id="hI0-Gc-Ixt"/>
-                    <navigationItem key="navigationItem" title="Discover" id="qru-7C-lc9"/>
+                    <navigationItem key="navigationItem" title="Discover" id="qru-7C-lc9">
+                        <barButtonItem key="leftBarButtonItem" title="Logout" id="v28-UJ-IwX">
+                            <connections>
+                                <action selector="logoutAction:" destination="UGR-cv-PWW" id="SBY-rU-nh6"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="discoverTableView" destination="aaj-sI-BIJ" id="MA9-8V-tlg"/>

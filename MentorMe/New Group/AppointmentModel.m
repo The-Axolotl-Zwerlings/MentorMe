@@ -9,6 +9,10 @@
 #import "AppointmentModel.h"
 
 @implementation AppointmentModel
+@dynamic meetingDate;
+@dynamic meetingType;
+@dynamic mentor;
+@dynamic meetingLocation;
 
 +(nonnull NSString *)parseClassName{
     return @"AppointmentModel";

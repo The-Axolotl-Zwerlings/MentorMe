@@ -56,7 +56,10 @@
     newUser.school = self.institutionField.text;
     newUser.major = self.majorField.text;
     
-
+    newUser.name = @"Jones";
+    newUser.jobTitle = @"idk";
+    newUser.school = @"a school";
+    
     // call sign up function on the object
     [newUser signUpInBackgroundWithBlock:^(BOOL succeeded, NSError * error) {
         if (error != nil) {
