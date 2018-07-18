@@ -20,6 +20,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *companyField;
 @property (weak, nonatomic) IBOutlet UITextField *institutionField;
 @property (weak, nonatomic) IBOutlet UITextField *majorField;
+@property (weak, nonatomic) IBOutlet UITextField *nameField;
 
 
 
@@ -28,6 +29,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *registerButton;
 
 @property (nonatomic, strong) UIImage* chosenProfilePicture;
+@property (nonatomic, strong) UIImage* resizedProfilePicture;
 
 @end
 
@@ -51,12 +53,14 @@
     newUser.username = self.usernameField.text;
     newUser.email = self.emailField.text;
     newUser.password = self.passwordField.text;
+    newUser.name = self.nameField.text;
     newUser.bio = self.bioField.text;
     newUser.jobTitle = self.JobTitleField.text;
     newUser.company = self.companyField.text;
     newUser.school = self.institutionField.text;
     newUser.major = self.majorField.text;
-    [self resizeThisImage:self.chosenProfilePicture withSize:self.chosenProfilePicture.size];
+    self.resizedProfilePicture = [self resizeThisImage:self.chosenProfilePicture withSize:self.chosenProfilePicture.size];
+    newUser.profilePic = [self getPFFileFromImage:self.resizedProfilePicture];
     
     // call sign up function on the object
     [newUser signUpInBackgroundWithBlock:^(BOOL succeeded, NSError * error) {
@@ -102,9 +106,21 @@
     
     return newImage;
 }
+- (PFFile *)getPFFileFromImage: (UIImage * _Nullable)image {
+    // check if image is not nil
+    if (!image) {
+        return nil;
+    }
+    NSData *imageData = UIImagePNGRepresentation(image);
+    // get image data and check if that is not nil
+    if (!imageData) {
+        return nil;
+    }
+    return [PFFile fileWithName:@"image.png" data:imageData];
+}
+
 
 - (IBAction)onTapRegister:(id)sender {
-    
     [self registerUser];
     
 }
