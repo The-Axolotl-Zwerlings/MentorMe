@@ -43,7 +43,7 @@
         <!--Navigation Controller-->
         <scene sceneID="1U9-38-rGd">
             <objects>
-                <navigationController id="JuJ-eJ-cQW" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="TabBarNavigationController" id="JuJ-eJ-cQW" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="sFS-Wx-lKu">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>

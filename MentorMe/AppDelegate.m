@@ -40,12 +40,10 @@
      }];
     
     if (PFUser.currentUser) {
-        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"TabBarViewControllerStoryboard" bundle:nil];
         
-        self.window.rootViewController = [storyboard instantiateViewControllerWithIdentifier:@"TabBarController"];
+        self.window.rootViewController = [storyboard instantiateViewControllerWithIdentifier:@"TabBarNavigationController"];
     }
-    
-    return YES;
     
     return YES;
 }

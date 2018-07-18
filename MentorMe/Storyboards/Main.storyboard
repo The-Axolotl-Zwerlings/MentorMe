@@ -13,7 +13,7 @@
         <!--Login View Controller-->
         <scene sceneID="IFU-fd-AZZ">
             <objects>
-                <viewController storyboardIdentifier="LoginViewController" id="e8i-D8-L1t" customClass="LoginViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainViewController" id="e8i-D8-L1t" customClass="LoginViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XUd-17-3LQ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -40,14 +40,6 @@
                                     <segue destination="w9f-Aa-b4d" kind="show" id="1q9-hH-8rd"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DH4-ZX-wbK">
-                                <rect key="frame" x="305" y="339" width="38" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Login"/>
-                                <connections>
-                                    <segue destination="i8M-xg-jYI" kind="show" id="NvJ-RG-qBR"/>
-                                </connections>
-                            </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="V8i-WI-Ffc">
                                 <rect key="frame" x="34" y="275" width="313" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -69,30 +61,45 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DH4-ZX-wbK">
+                                <rect key="frame" x="309" y="339" width="38" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Login"/>
+                                <connections>
+                                    <action selector="onTapLogin:" destination="e8i-D8-L1t" eventType="touchUpInside" id="H94-VM-Dgb"/>
+                                    <segue destination="f2H-of-YX2" kind="show" id="0Sg-Hu-hWY"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="bOb-Gh-aYl"/>
                     </view>
+                    <connections>
+                        <outlet property="LogInButton" destination="DH4-ZX-wbK" id="cyJ-ou-iX0"/>
+                        <outlet property="RegisterButton" destination="m9l-h7-X6H" id="cvC-xW-D6B"/>
+                        <outlet property="passwordField" destination="V8i-WI-Ffc" id="6XW-ae-sAz"/>
+                        <outlet property="usernameField" destination="Swr-4R-Jd6" id="RPA-gA-pFh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NKk-YD-AaS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="133.59999999999999" y="154.27286356821591"/>
         </scene>
-        <!--SignUpViewController-->
+        <!--SignUpNavController-->
         <scene sceneID="6JB-lG-cPD">
             <objects>
-                <viewControllerPlaceholder storyboardName="SignUpViewController" referencedIdentifier="SignUpViewController" id="w9f-Aa-b4d" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="SignUpViewController" referencedIdentifier="SignUpNavController" id="w9f-Aa-b4d" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nd3-oo-bt5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="696" y="-32"/>
+            <point key="canvasLocation" x="813" y="139"/>
         </scene>
-        <!--TabBarViewController-->
-        <scene sceneID="vim-47-WMv">
+        <!--TabBarNavigationController-->
+        <scene sceneID="1Tn-OM-CKv">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="sCc-Sc-Lkb" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="TabBarViewController" id="i8M-xg-jYI" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="TabBarViewControllerStoryboard" referencedIdentifier="TabBarNavigationController" id="f2H-of-YX2" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Igt-wP-lDH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="694" y="98"/>
+            <point key="canvasLocation" x="808" y="251"/>
         </scene>
     </scenes>
 </document>
