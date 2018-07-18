@@ -14,9 +14,13 @@
 @interface AppointmentModel : PFObject <PFSubclassing>
 
 @property (nonatomic, strong ) PFUser *mentor;
+@property (nonatomic, strong ) PFUser *mentee;
 @property( nonatomic, strong ) NSDate *meetingDate;
 @property( nonatomic, strong ) NSString *meetingType;
 @property( nonatomic, strong ) NSString *meetingLocation;
+
++ (void) postAppointment: ( PFUser * _Nullable )mentor withMeetingLocation: (NSString * _Nullable )meetingLocation withMeetingType: (NSString *_Nullable ) meetingType withMeetingDate: (NSDate * _Nullable )meetingDate withCompletion: (void(^_Nullable)(BOOL succeeded, NSError * _Nullable error, AppointmentModel * _Nullable newAppointment))completion;
+
 
 
 

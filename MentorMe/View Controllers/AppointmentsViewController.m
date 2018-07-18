@@ -9,7 +9,6 @@
 #import "AppointmentsViewController.h"
 #import "AppointmentCell.h"
 #import "AppointmentModel.h"
-
 #import "Parse/Parse.h"
 #import "ParseUI.h"
 #import "PFUser+ExtendedUser.h"
@@ -35,8 +34,15 @@
     
     [self.appointmentsTableView insertSubview:self.refreshControl atIndex:0];
     
-    [self.appointmentsTableView
-     reloadData];
+    [self.appointmentsTableView reloadData];
+    
+}
+
+- (void) viewWillAppear:(BOOL)animated {
+    
+    [super viewWillAppear:animated];
+    
+    [self.appointmentsTableView reloadData];
     
 }
 
@@ -44,19 +50,25 @@
 
     NSLog( @"Fetching Appointments...");
     [self.refreshControl endRefreshing];
+    
+    PFQuery *query = [PFQuery queryWithClassName:@"AppointmentModel"];
+    
+  //  [query includeKeys:@[@"_p_mentee", @"created_at"]];
+    
+    [query findObjectsInBackgroundWithBlock:^(NSArray *posts, NSError *error) {
+    
+        if (posts != nil) {
+            self.appointmentsArray = (NSMutableArray *)posts;
+            [self.appointmentsTableView reloadData];
+            
+            [self.refreshControl endRefreshing];
+        } else {
+            NSLog(@"%@", error.localizedDescription);
+        }
+    }];
+    
 
 }
-
-- (void) viewWillAppear:(BOOL)animated{
-    
-    [super viewWillAppear:true];
-    
-    NSLog(@"Reloading table view");
-    
-    [self fetchAppointments];
-    
-}
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
