@@ -55,7 +55,7 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="onTapRegister:" destination="JqI-0m-vkI" eventType="touchUpInside" id="wTT-vv-crD"/>
-                                    <segue destination="ygy-Yk-x3g" kind="show" identifier="segueToTabBarViewController" id="kId-JX-dkC"/>
+                                    <segue destination="ygy-Yk-x3g" kind="presentation" identifier="segueToTabBarViewController" id="kId-JX-dkC"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Erq-G5-e9G">
