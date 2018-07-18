@@ -13,5 +13,6 @@
 @property (strong, nonatomic) IBOutlet UILabel *jobLabel;
 @property (strong, nonatomic) IBOutlet UILabel *schoolLabel;
 @property (strong, nonatomic) IBOutlet UILabel *interestsLabel;
-
+@property (strong, nonatomic) IBOutlet PFImageView *profilePicView;
+-(void)layoutCell:(PFUser *)user;
 @end

@@ -7,7 +7,7 @@
 //
 
 #import "DiscoverCell.h"
-
+#import "PFUser+ExtendedUser.h"
 @implementation DiscoverCell
 
 - (void)awakeFromNib {
@@ -20,5 +20,10 @@
 
     // Configure the view for the selected state
 }
-
+- (void)layoutCell:(PFUser *)user{
+    self.nameLabel.text = user.name;
+    self.schoolLabel.text = user.school;
+    self.jobLabel.text = user.jobTitle;
+    self.profilePicView.image = [UIImage imageNamed:@"user"];
+}
 @end
