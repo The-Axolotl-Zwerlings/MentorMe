@@ -26,6 +26,8 @@
     self.discoverTableView.dataSource = self;
     // Do any additional setup after loading the view.
     
+    [self fetchFilteredUsers];
+    
     
     self.refreshControl = [[UIRefreshControl alloc] init];
     [self.refreshControl addTarget:self action:@selector(fetchFilteredUsers) forControlEvents:UIControlEventValueChanged];
@@ -95,6 +97,7 @@
         }
     }];
 }
+
 - (IBAction)logoutAction:(UIBarButtonItem *)sender {
     [PFUser logOutInBackgroundWithBlock:^(NSError * _Nullable error) {
         if(error == nil){
