@@ -26,11 +26,11 @@
     self.discoverTableView.dataSource = self;
     // Do any additional setup after loading the view.
     
-    [self fetchFilteredUsers];
+    [self fetchFilteredUsersGet];
     
     
     self.refreshControl = [[UIRefreshControl alloc] init];
-    [self.refreshControl addTarget:self action:@selector(fetchFilteredUsers) forControlEvents:UIControlEventValueChanged];
+    [self.refreshControl addTarget:self action:@selector(fetchFilteredUsersGet) forControlEvents:UIControlEventValueChanged];
     
     [self.discoverTableView insertSubview:self.refreshControl atIndex:0];
     
@@ -50,16 +50,12 @@
     // Dispose of any resources that can be recreated.
 }
 
--(void)fetchFilteredUsers{
+-(void)fetchFilteredUsersGet{
     PFQuery *usersQuery = [PFUser query];
-    //usersQuery.limit = 20;
+    usersQuery.limit = 3;
     //[usersQuery orderByDescending:@"createdAt"];
     
     [usersQuery findObjectsInBackgroundWithBlock:^(NSArray *users, NSError * error) {
-        
-        PFUser *firstUser = [users firstObject];
-        
-        NSLog( @"%@", firstUser.username);
         
         if(users){
         
@@ -74,6 +70,41 @@
     }];
 
 }
+
+-(void)fetchFilteredUsersGive{
+    PFQuery *usersQuery = [PFUser query];
+    usersQuery.limit = 2;
+    //[usersQuery orderByDescending:@"createdAt"];
+    
+    [usersQuery findObjectsInBackgroundWithBlock:^(NSArray *users, NSError * error) {
+        
+        if(users){
+            
+            self.filteredUsers = users;
+            [self.discoverTableView reloadData];
+            [self.refreshControl endRefreshing];
+            NSLog(@"WE GOT THE USERS 😇");
+        } else{
+            NSLog(@"didn't get the users 🙃");
+        }
+        
+    }];
+
+}
+
+- (IBAction)onEdit:(UISegmentedControl *)sender {
+    
+    //if we are going to give advice
+    if(self.mentorMenteeSegControl.selectedSegmentIndex == 1){
+        [self fetchFilteredUsersGive];
+        
+    } else{
+        [self fetchFilteredUsersGet];
+    }
+    
+    
+}
+
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return self.filteredUsers.count;
