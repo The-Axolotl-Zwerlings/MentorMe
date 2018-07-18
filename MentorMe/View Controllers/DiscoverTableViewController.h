@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DiscoverTableViewController : UIViewController
+@interface DiscoverTableViewController : UIViewController <UITableViewDelegate,UITableViewDataSource>
 @property (strong, nonatomic) IBOutlet UITableView *discoverTableView;
 
 @end
