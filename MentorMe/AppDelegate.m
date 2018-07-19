@@ -10,7 +10,7 @@
 #import "Parse/Parse.h"
 #import "AppointmentCell.h"
 #import "AppointmentModel.h"
-#import "AppointmentsViewController.h"
+#import "AppointmentDetailsViewController.h"
 
 @interface AppDelegate ()
 

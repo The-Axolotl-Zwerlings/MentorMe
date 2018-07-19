@@ -15,8 +15,6 @@
 		A82A494C20FFA5B800DC129F /* AppointmentModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A82A494B20FFA5B800DC129F /* AppointmentModel.m */; };
 		A82A494F20FFA5C800DC129F /* InterestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A82A494E20FFA5C800DC129F /* InterestModel.m */; };
 		A82A495A20FFAF8200DC129F /* DiscoverCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A82A495920FFAF8200DC129F /* DiscoverCell.m */; };
-		A82A495C20FFF70100DC129F /* CreateApp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A82A495B20FFF70100DC129F /* CreateApp.storyboard */; };
-		A82A495F20FFF73400DC129F /* CreateAppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A82A495E20FFF73400DC129F /* CreateAppViewController.m */; };
 		A88312FD20F28D5C00363E48 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A88312FC20F28D5C00363E48 /* AppDelegate.m */; };
 		A883130320F28D5C00363E48 /* TabBarViewControllerStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A883130120F28D5C00363E48 /* TabBarViewControllerStoryboard.storyboard */; };
 		A883130520F28D5F00363E48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A883130420F28D5F00363E48 /* Assets.xcassets */; };
@@ -34,7 +32,9 @@
 		C03D899F20F7CA9900342B39 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C03D899E20F7CA9900342B39 /* LoginViewController.m */; };
 		C03D89A520F7CE3D00342B39 /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C03D89A420F7CE3D00342B39 /* SignUpViewController.m */; };
 		C05743DE20FFBB1E00A6F529 /* AppointmentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C05743DD20FFBB1E00A6F529 /* AppointmentCell.m */; };
-		C05743E120FFC22F00A6F529 /* AppointmentsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C05743E020FFC22F00A6F529 /* AppointmentsViewController.m */; };
+		C0F101722100FF46009ADA47 /* AppointmentDetailsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0F101712100FF46009ADA47 /* AppointmentDetailsViewController.storyboard */; };
+		C0F101752100FF9F009ADA47 /* AppointmentDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0F101742100FF9F009ADA47 /* AppointmentDetailsViewController.m */; };
+		C0F101782101059B009ADA47 /* AppointmentsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0F101772101059B009ADA47 /* AppointmentsViewController.m */; };
 		FE4AE2B2B579EAC022338C7C /* libPods-MentorMe.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC60CE26C8A32A3C34A2E255 /* libPods-MentorMe.a */; };
 /* End PBXBuildFile section */
 
@@ -74,9 +74,6 @@
 		A82A494E20FFA5C800DC129F /* InterestModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterestModel.m; sourceTree = "<group>"; };
 		A82A495820FFAF8200DC129F /* DiscoverCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DiscoverCell.h; sourceTree = "<group>"; };
 		A82A495920FFAF8200DC129F /* DiscoverCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiscoverCell.m; sourceTree = "<group>"; };
-		A82A495B20FFF70100DC129F /* CreateApp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CreateApp.storyboard; sourceTree = "<group>"; };
-		A82A495D20FFF73400DC129F /* CreateAppViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CreateAppViewController.h; sourceTree = "<group>"; };
-		A82A495E20FFF73400DC129F /* CreateAppViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CreateAppViewController.m; sourceTree = "<group>"; };
 		A88312F820F28D5C00363E48 /* MentorMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MentorMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A88312FB20F28D5C00363E48 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A88312FC20F28D5C00363E48 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -107,8 +104,11 @@
 		C03D89A420F7CE3D00342B39 /* SignUpViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SignUpViewController.m; sourceTree = "<group>"; };
 		C05743DC20FFBB1E00A6F529 /* AppointmentCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppointmentCell.h; sourceTree = "<group>"; };
 		C05743DD20FFBB1E00A6F529 /* AppointmentCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppointmentCell.m; sourceTree = "<group>"; };
-		C05743DF20FFC22F00A6F529 /* AppointmentsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppointmentsViewController.h; sourceTree = "<group>"; };
-		C05743E020FFC22F00A6F529 /* AppointmentsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppointmentsViewController.m; sourceTree = "<group>"; };
+		C0F101712100FF46009ADA47 /* AppointmentDetailsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AppointmentDetailsViewController.storyboard; sourceTree = "<group>"; };
+		C0F101732100FF9F009ADA47 /* AppointmentDetailsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppointmentDetailsViewController.h; sourceTree = "<group>"; };
+		C0F101742100FF9F009ADA47 /* AppointmentDetailsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppointmentDetailsViewController.m; sourceTree = "<group>"; };
+		C0F101762101059B009ADA47 /* AppointmentsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppointmentsViewController.h; sourceTree = "<group>"; };
+		C0F101772101059B009ADA47 /* AppointmentsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppointmentsViewController.m; sourceTree = "<group>"; };
 		E4893F7FB4B7966D94418CB2 /* libPods-MentorMeTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MentorMeTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -227,6 +227,7 @@
 				A883130120F28D5C00363E48 /* TabBarViewControllerStoryboard.storyboard */,
 				C002267120FE64FD007D359B /* Main.storyboard */,
 				C002266F20FE63BA007D359B /* SignUpViewController.storyboard */,
+				C0F101712100FF46009ADA47 /* AppointmentDetailsViewController.storyboard */,
 				C0D040D820FE7000005D4FC2 /* Tab Bar Storyboards */,
 			);
 			path = Storyboards;
@@ -243,12 +244,19 @@
 				C03D89A420F7CE3D00342B39 /* SignUpViewController.m */,
 				C002266C20FE5B70007D359B /* ProfileViewController.h */,
 				C002266D20FE5B70007D359B /* ProfileViewController.m */,
+<<<<<<< HEAD
 				C05743DF20FFC22F00A6F529 /* AppointmentsViewController.h */,
 				C05743E020FFC22F00A6F529 /* AppointmentsViewController.m */,
 				A82A495D20FFF73400DC129F /* CreateAppViewController.h */,
 				A82A495E20FFF73400DC129F /* CreateAppViewController.m */,
 				A8011C622100FFC50028E604 /* FilterViewController.h */,
 				A8011C632100FFC50028E604 /* FilterViewController.m */,
+=======
+				C0F101732100FF9F009ADA47 /* AppointmentDetailsViewController.h */,
+				C0F101742100FF9F009ADA47 /* AppointmentDetailsViewController.m */,
+				C0F101762101059B009ADA47 /* AppointmentsViewController.h */,
+				C0F101772101059B009ADA47 /* AppointmentsViewController.m */,
+>>>>>>> a397a5aa9219442fe44816be57b5e652293e47c9
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -271,7 +279,6 @@
 				A8011C602100FC370028E604 /* Filters.storyboard */,
 				C002266820FE5A11007D359B /* AppointmentsViewController.storyboard */,
 				C002266A20FE5A2C007D359B /* ProfileViewControllerStoryboard.storyboard */,
-				A82A495B20FFF70100DC129F /* CreateApp.storyboard */,
 			);
 			path = "Tab Bar Storyboards";
 			sourceTree = "<group>";
@@ -396,7 +403,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A82A495C20FFF70100DC129F /* CreateApp.storyboard in Resources */,
 				C002267220FE64FD007D359B /* Main.storyboard in Resources */,
 				C002266720FE57D1007D359B /* DiscoverTableViewStoryboard.storyboard in Resources */,
 				A883130820F28D5F00363E48 /* LaunchScreen.storyboard in Resources */,
@@ -406,6 +412,7 @@
 				C002266B20FE5A2C007D359B /* ProfileViewControllerStoryboard.storyboard in Resources */,
 				A8011C612100FC370028E604 /* Filters.storyboard in Resources */,
 				A883130320F28D5C00363E48 /* TabBarViewControllerStoryboard.storyboard in Resources */,
+				C0F101722100FF46009ADA47 /* AppointmentDetailsViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -513,16 +520,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C05743E120FFC22F00A6F529 /* AppointmentsViewController.m in Sources */,
 				C03D899920F7CA8D00342B39 /* DiscoverTableViewController.m in Sources */,
+				C0F101782101059B009ADA47 /* AppointmentsViewController.m in Sources */,
 				A883130B20F28D5F00363E48 /* main.m in Sources */,
 				C05743DE20FFBB1E00A6F529 /* AppointmentCell.m in Sources */,
 				A8011C642100FFC50028E604 /* FilterViewController.m in Sources */,
 				A82A495A20FFAF8200DC129F /* DiscoverCell.m in Sources */,
 				A82A494F20FFA5C800DC129F /* InterestModel.m in Sources */,
 				A82A494C20FFA5B800DC129F /* AppointmentModel.m in Sources */,
+				C0F101752100FF9F009ADA47 /* AppointmentDetailsViewController.m in Sources */,
 				A88312FD20F28D5C00363E48 /* AppDelegate.m in Sources */,
-				A82A495F20FFF73400DC129F /* CreateAppViewController.m in Sources */,
 				A82A494920FFA3FE00DC129F /* PFUser+ExtendedUser.m in Sources */,
 				C002266E20FE5B70007D359B /* ProfileViewController.m in Sources */,
 				C03D89A520F7CE3D00342B39 /* SignUpViewController.m in Sources */,
