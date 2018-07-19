@@ -53,7 +53,7 @@
     
     PFQuery *query = [PFQuery queryWithClassName:@"AppointmentModel"];
     
-    [query includeKeys:@[@"username"]];
+    [query includeKeys:@[@"mentorUsername"]];
     
     [query findObjectsInBackgroundWithBlock:^(NSArray *posts, NSError *error) {
     
@@ -62,6 +62,8 @@
             [self.appointmentsTableView reloadData];
             
             [self.refreshControl endRefreshing];
+            NSLog(@"WE GOT THE APPOINTMENTS 😇");
+        
         } else {
             NSLog(@"%@", error.localizedDescription);
         }

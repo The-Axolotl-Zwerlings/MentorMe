@@ -31,16 +31,19 @@
    
     _appointment = appointment;
    
-    PFUser *mentor = self.appointment.mentor;
-    self.mentorName.text = mentor.username;
+/*    PFUser *mentor = self.appointment.mentor;
+    self.mentorName.text = self.appointment.menteeUsername;
     self.mentorProfilePic.file = mentor.profilePic;
     
-    _appointment = appointment;
+    _appointment = appointment;*/
     
+
+    
+    self.mentorName.text = self.appointment.mentorName;
     self.meetingDate.text = [self.appointment.meetingDate timeAgoSinceNow];
     self.meetingType.text = self.appointment.meetingType;
     self.meetingLocation.text = self.appointment.meetingLocation;
-    
+        
     
 }
 

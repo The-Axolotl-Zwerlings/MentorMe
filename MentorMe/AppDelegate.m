@@ -31,6 +31,34 @@
     [Parse initializeWithConfiguration:config];
     
 
+     
+     PFObject *appointment = [PFObject objectWithClassName:@"AppointmentModel"];
+     PFUser *newUser = [PFUser currentUser];
+    
+    
+     newUser.name = @"Nihal Jemal";
+     newUser.jobTitle = @"Software Engineering Intern";
+     newUser.school = @"Spelman College";
+     appointment[@"mentorName"] = newUser.name;
+     appointment[@"mentor"] = newUser;
+     appointment[@"mentee"] = [PFUser currentUser];
+     appointment[@"meetingLocation"] = @"Menlo Park Building 13";
+     appointment[@"meetingType"] = @"VideoChat in 13.1Z2";
+    
+    
+    
+     
+     [appointment saveInBackgroundWithBlock:^(BOOL succeeded, NSError * _Nullable error) {
+     if (succeeded) {
+     NSLog(@"New Appointment saved!");
+     } else {
+     NSLog(@"Error: %@", error.description);
+     }
+     }];
+     
+
+    
+
     if (PFUser.currentUser) {
         UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"TabBarViewControllerStoryboard" bundle:nil];
         NSLog(@"already logged on");

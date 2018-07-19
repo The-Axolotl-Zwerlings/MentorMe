@@ -59,8 +59,9 @@
     newUser.company = self.companyField.text;
     newUser.school = self.institutionField.text;
     newUser.major = self.majorField.text;
-    self.resizedProfilePicture = [self resizeThisImage:self.chosenProfilePicture withSize:self.chosenProfilePicture.size];
-    newUser.profilePic = [self getPFFileFromImage:self.resizedProfilePicture];
+    
+    //self.resizedProfilePicture = [self resizeThisImage:self.chosenProfilePicture withSize:self.chosenProfilePicture.size];
+    //newUser.profilePic = [self getPFFileFromImage:self.resizedProfilePicture];
     
     // call sign up function on the object
     [newUser signUpInBackgroundWithBlock:^(BOOL succeeded, NSError * error) {
@@ -73,7 +74,7 @@
         }
     }];
 }
-
+/*
 -(void)addProfilePicture {
     UIImagePickerController* imagePickerVC = [UIImagePickerController new];
     imagePickerVC.delegate = self;
@@ -117,7 +118,7 @@
         return nil;
     }
     return [PFFile fileWithName:@"image.png" data:imageData];
-}
+}*/
 
 
 - (IBAction)onTapRegister:(id)sender {
@@ -126,7 +127,10 @@
 }
 
 - (IBAction)onTapAddProfilePicture:(id)sender {
-    [self addProfilePicture];
+    
+    NSLog( @"Load camera");
+    
+    //[self addProfilePicture];
 }
 
 

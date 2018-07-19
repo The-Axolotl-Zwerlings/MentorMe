@@ -10,7 +10,8 @@
 
 @implementation AppointmentModel
 
-@dynamic menteeUsername;
+
+@dynamic mentorName;
 @dynamic mentor;
 @dynamic mentee;
 
@@ -33,7 +34,7 @@
     newUser.school = @"School A";
     
     
-    appointment[@"menteeUsername"] = @"nsalinas";
+    appointment[@"mentorName"] = @"nsalinas";
     appointment[@"mentor"] = newUser;
     appointment[@"mentee"] = [PFUser currentUser];
     appointment[@"meetingLocation"] = @"Menlo Park Building 1";
