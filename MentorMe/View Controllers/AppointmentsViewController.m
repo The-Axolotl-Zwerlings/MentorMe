@@ -7,6 +7,7 @@
 //
 
 #import "AppointmentsViewController.h"
+#import "AppointmentDetailsViewController.h"
 #import "AppointmentCell.h"
 #import "AppointmentModel.h"
 #import "Parse/Parse.h"
@@ -22,6 +23,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     
     self.appointmentsTableView.delegate = self;
     self.appointmentsTableView.dataSource = self;
@@ -47,7 +49,7 @@
 }
 
 - (void) fetchAppointments {
-
+    
     NSLog( @"Fetching Appointments...");
     [self.refreshControl endRefreshing];
     
@@ -56,20 +58,20 @@
     [query includeKeys:@[@"mentorUsername"]];
     
     [query findObjectsInBackgroundWithBlock:^(NSArray *posts, NSError *error) {
-    
+        
         if (posts != nil) {
             self.appointmentsArray = (NSMutableArray *)posts;
             [self.appointmentsTableView reloadData];
             
             [self.refreshControl endRefreshing];
             NSLog(@"WE GOT THE APPOINTMENTS 😇");
-        
+            
         } else {
             NSLog(@"%@", error.localizedDescription);
         }
     }];
     
-
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -105,9 +107,16 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     
-    
-   
+    if ( [segue.identifier isEqualToString:@"segueToAppointmentsDetailsViewController"]){
+        
+        UITableViewCell *tappedCell = sender;
+        NSIndexPath *indexPath = [self.appointmentsTableView indexPathForCell:tappedCell];
+        AppointmentModel *incomingAppointment = self.appointmentsArray[indexPath.row];
+        AppointmentDetailsViewController * appointmentDetailsViewController = [segue destinationViewController];
+        appointmentDetailsViewController.appointment = incomingAppointment;
+        appointmentDetailsViewController.delegate = self;
 
+    }
 }
 
 @end

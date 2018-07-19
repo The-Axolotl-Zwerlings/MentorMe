@@ -7,7 +7,7 @@
 //
 
 #import "AppointmentCell.h"
-#import "AppointmentsViewController.h"
+#import "AppointmentDetailsViewController.h"
 #import "PFUser+ExtendedUser.h"
 #import "Parse/Parse.h"
 #import "DateTools.h"

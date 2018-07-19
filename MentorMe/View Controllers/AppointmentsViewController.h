@@ -15,6 +15,7 @@
 @property (strong, nonatomic) IBOutlet UITableView *appointmentsTableView;
 @property (strong, nonatomic) NSMutableArray *appointmentsArray;
 
+
 @property (weak, nonatomic) id<AppointmentsViewControllerDelegate> delegate;
 
 
