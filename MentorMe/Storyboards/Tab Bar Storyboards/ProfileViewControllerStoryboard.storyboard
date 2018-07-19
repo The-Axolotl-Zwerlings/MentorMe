@@ -90,6 +90,9 @@
                                         <rect key="frame" x="8" y="5" width="359" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="Connect"/>
+                                        <connections>
+                                            <segue destination="eu7-wG-gSt" kind="presentation" id="MUk-8J-Vip"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.33214356458862071" green="0.83677938753356618" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -117,6 +120,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ch3-oN-wgs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4751.1999999999998" y="28.335832083958024"/>
+        </scene>
+        <!--CreateApp-->
+        <scene sceneID="35g-BK-8Yi">
+            <objects>
+                <viewControllerPlaceholder storyboardName="CreateApp" id="eu7-wG-gSt" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VJ2-gf-ky5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5321" y="165"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="EHe-UL-HiJ">
