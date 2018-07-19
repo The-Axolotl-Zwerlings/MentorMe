@@ -245,6 +245,7 @@
 				C002266C20FE5B70007D359B /* ProfileViewController.h */,
 				C002266D20FE5B70007D359B /* ProfileViewController.m */,
 <<<<<<< HEAD
+<<<<<<< HEAD
 				C05743DF20FFC22F00A6F529 /* AppointmentsViewController.h */,
 				C05743E020FFC22F00A6F529 /* AppointmentsViewController.m */,
 				A82A495D20FFF73400DC129F /* CreateAppViewController.h */,
@@ -252,10 +253,15 @@
 				A8011C622100FFC50028E604 /* FilterViewController.h */,
 				A8011C632100FFC50028E604 /* FilterViewController.m */,
 =======
+=======
+>>>>>>> a397a5aa9219442fe44816be57b5e652293e47c9
 				C0F101732100FF9F009ADA47 /* AppointmentDetailsViewController.h */,
 				C0F101742100FF9F009ADA47 /* AppointmentDetailsViewController.m */,
 				C0F101762101059B009ADA47 /* AppointmentsViewController.h */,
 				C0F101772101059B009ADA47 /* AppointmentsViewController.m */,
+<<<<<<< HEAD
+>>>>>>> a397a5aa9219442fe44816be57b5e652293e47c9
+=======
 >>>>>>> a397a5aa9219442fe44816be57b5e652293e47c9
 			);
 			path = "View Controllers";
