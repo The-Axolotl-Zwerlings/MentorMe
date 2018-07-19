@@ -96,6 +96,9 @@
                                 <state key="normal" title="Filters">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="pjO-pe-pt6" kind="presentation" identifier="filterSegue" id="dzt-CT-4AJ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nmf-HO-7dG">
                                 <rect key="frame" x="260" y="73" width="57" height="30"/>
@@ -127,6 +130,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="anQ-We-Gm0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2186.4000000000001" y="187.55622188905548"/>
+        </scene>
+        <!--Filters-->
+        <scene sceneID="wQI-II-MkJ">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Filters" id="pjO-pe-pt6" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VCh-A6-txC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2889" y="199"/>
         </scene>
         <!--Discover-->
         <scene sceneID="zJf-V0-auA">

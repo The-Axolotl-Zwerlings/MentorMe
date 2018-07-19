@@ -8,12 +8,15 @@
 
 #import "DiscoverTableViewController.h"
 #import "DiscoverCell.h"
+#import "FilterViewController.h"
 #import "Parse.h"
-@interface DiscoverTableViewController () <UITableViewDelegate,UITableViewDataSource>
+@interface DiscoverTableViewController () <UITableViewDelegate,UITableViewDataSource,FilterDelegate>
 @property (strong, nonatomic) IBOutlet UISegmentedControl *mentorMenteeSegControl;
 @property (strong, nonatomic) IBOutlet UIButton *filterButton;
 @property (strong, nonatomic) NSArray *filteredUsers;
 @property (strong, nonatomic) UIRefreshControl *refreshControl;
+@property (strong, nonatomic) NSArray *filterArray;
+@property (nonatomic) BOOL getAdvice;
 @end
 
 @implementation DiscoverTableViewController
@@ -21,6 +24,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.getAdvice = YES;
+    
+    NSNumber* noObj = [NSNumber numberWithBool:NO];
+    self.filterArray = [[NSArray alloc] initWithObjects:noObj,noObj,noObj,noObj,nil];
     
     self.discoverTableView.delegate = self;
     self.discoverTableView.dataSource = self;
@@ -92,13 +100,19 @@
 
 }
 
+- (void)didChangeSchool:(NSNumber *)school withCompany:(NSNumber *)company andLocation:(NSNumber *)location{
+    
+}
+
 - (IBAction)onEdit:(UISegmentedControl *)sender {
     
     //if we are going to give advice
     if(self.mentorMenteeSegControl.selectedSegmentIndex == 1){
+        self.getAdvice = NO;
         [self fetchFilteredUsersGive];
         
     } else{
+        self.getAdvice = YES;
         [self fetchFilteredUsersGet];
     }
     
@@ -139,14 +153,19 @@
         }
     }];
 }
-/*
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
+    if([segue.identifier isEqualToString:@"filterSegue"]){
+        UINavigationController *navControl = [segue destinationViewController];
+        FilterViewController *filterViewController = (FilterViewController *)navControl.topViewController;
+        filterViewController.delegate = self;
+    }
 }
-*/
+
 
 @end

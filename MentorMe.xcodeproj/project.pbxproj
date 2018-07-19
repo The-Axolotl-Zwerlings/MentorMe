@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		5A93DD3343D8201C3DF38DC5 /* libPods-MentorMeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4893F7FB4B7966D94418CB2 /* libPods-MentorMeTests.a */; };
 		9FC714FCF36D31653200DA99 /* libPods-MentorMeUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 63F95249E25064190E804E60 /* libPods-MentorMeUITests.a */; };
+		A8011C612100FC370028E604 /* Filters.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8011C602100FC370028E604 /* Filters.storyboard */; };
+		A8011C642100FFC50028E604 /* FilterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8011C632100FFC50028E604 /* FilterViewController.m */; };
 		A82A494920FFA3FE00DC129F /* PFUser+ExtendedUser.m in Sources */ = {isa = PBXBuildFile; fileRef = A82A494820FFA3FE00DC129F /* PFUser+ExtendedUser.m */; };
 		A82A494C20FFA5B800DC129F /* AppointmentModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A82A494B20FFA5B800DC129F /* AppointmentModel.m */; };
 		A82A494F20FFA5C800DC129F /* InterestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A82A494E20FFA5C800DC129F /* InterestModel.m */; };
@@ -61,6 +63,9 @@
 		63F95249E25064190E804E60 /* libPods-MentorMeUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MentorMeUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		644A9C9A2B69BAA56AAD9E66 /* Pods-MentorMeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MentorMeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MentorMeUITests/Pods-MentorMeUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		9BFB1FC76E501007979CC5A1 /* Pods-MentorMe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MentorMe.release.xcconfig"; path = "Pods/Target Support Files/Pods-MentorMe/Pods-MentorMe.release.xcconfig"; sourceTree = "<group>"; };
+		A8011C602100FC370028E604 /* Filters.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Filters.storyboard; sourceTree = "<group>"; };
+		A8011C622100FFC50028E604 /* FilterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FilterViewController.h; sourceTree = "<group>"; };
+		A8011C632100FFC50028E604 /* FilterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FilterViewController.m; sourceTree = "<group>"; };
 		A82A494720FFA3FE00DC129F /* PFUser+ExtendedUser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PFUser+ExtendedUser.h"; sourceTree = "<group>"; };
 		A82A494820FFA3FE00DC129F /* PFUser+ExtendedUser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "PFUser+ExtendedUser.m"; sourceTree = "<group>"; };
 		A82A494A20FFA5B800DC129F /* AppointmentModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppointmentModel.h; sourceTree = "<group>"; };
@@ -242,6 +247,8 @@
 				C05743E020FFC22F00A6F529 /* AppointmentsViewController.m */,
 				A82A495D20FFF73400DC129F /* CreateAppViewController.h */,
 				A82A495E20FFF73400DC129F /* CreateAppViewController.m */,
+				A8011C622100FFC50028E604 /* FilterViewController.h */,
+				A8011C632100FFC50028E604 /* FilterViewController.m */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -261,6 +268,7 @@
 			isa = PBXGroup;
 			children = (
 				C002266620FE57D1007D359B /* DiscoverTableViewStoryboard.storyboard */,
+				A8011C602100FC370028E604 /* Filters.storyboard */,
 				C002266820FE5A11007D359B /* AppointmentsViewController.storyboard */,
 				C002266A20FE5A2C007D359B /* ProfileViewControllerStoryboard.storyboard */,
 				A82A495B20FFF70100DC129F /* CreateApp.storyboard */,
@@ -396,6 +404,7 @@
 				C002266920FE5A11007D359B /* AppointmentsViewController.storyboard in Resources */,
 				C002267020FE63BA007D359B /* SignUpViewController.storyboard in Resources */,
 				C002266B20FE5A2C007D359B /* ProfileViewControllerStoryboard.storyboard in Resources */,
+				A8011C612100FC370028E604 /* Filters.storyboard in Resources */,
 				A883130320F28D5C00363E48 /* TabBarViewControllerStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -508,6 +517,7 @@
 				C03D899920F7CA8D00342B39 /* DiscoverTableViewController.m in Sources */,
 				A883130B20F28D5F00363E48 /* main.m in Sources */,
 				C05743DE20FFBB1E00A6F529 /* AppointmentCell.m in Sources */,
+				A8011C642100FFC50028E604 /* FilterViewController.m in Sources */,
 				A82A495A20FFAF8200DC129F /* DiscoverCell.m in Sources */,
 				A82A494F20FFA5C800DC129F /* InterestModel.m in Sources */,
 				A82A494C20FFA5B800DC129F /* AppointmentModel.m in Sources */,
