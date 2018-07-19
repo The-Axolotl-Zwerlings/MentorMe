@@ -103,4 +103,28 @@
     return cell;
 }
 
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    
+    
+    if( [segue.identifier isEqualToString:@"segueToComposeTweetViewController" ] ){
+        
+        UINavigationController *navigationController = [segue destinationViewController];
+        ComposeViewController *composeController = (ComposeViewController*) navigationController.topViewController;
+        composeController.delegate = self;
+        
+        
+    } else if ( [segue.identifier isEqualToString:@"segueToTweetDetailsViewController" ] ){
+        
+        UITableViewCell *tappedCell = sender;
+        NSIndexPath *indexPath = [self.tweetTimelineTableView indexPathForCell:tappedCell];
+        
+        Tweet *tweet = self.tweetsArray[indexPath.row];
+        
+        TweetDetailsViewController * tweetDetailViewController = [segue destinationViewController];
+        
+        tweetDetailViewController.tweet = tweet;
+        
+    }
+}
+
 @end

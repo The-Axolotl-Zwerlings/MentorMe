@@ -86,6 +86,7 @@
                                             <outlet property="meetingType" destination="syA-mL-EtP" id="USo-ij-cPU"/>
                                             <outlet property="mentorName" destination="G8X-OZ-KSm" id="x4D-zY-zXT"/>
                                             <outlet property="mentorProfilePic" destination="ocf-VM-Hy6" id="Jyy-8p-mAf"/>
+                                            <segue destination="vA7-hr-JpL" kind="show" identifier="segueToCreateAppViewController" id="YOf-nu-gBc"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -104,6 +105,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bOj-rm-IuB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3146.4000000000001" y="-109.29535232383809"/>
+        </scene>
+        <!--CreateApp-->
+        <scene sceneID="waX-yF-0XG">
+            <objects>
+                <viewControllerPlaceholder storyboardName="CreateApp" id="vA7-hr-JpL" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hrk-Be-otV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3776" y="-128"/>
         </scene>
         <!--Appointments-->
         <scene sceneID="wZ3-MW-hst">

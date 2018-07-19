@@ -31,7 +31,7 @@
     [Parse initializeWithConfiguration:config];
     
 
-     
+     /*
      PFObject *appointment = [PFObject objectWithClassName:@"AppointmentModel"];
      PFUser *newUser = [PFUser currentUser];
     
@@ -55,6 +55,8 @@
      NSLog(@"Error: %@", error.description);
      }
      }];
+      
+      */
      
 
     
